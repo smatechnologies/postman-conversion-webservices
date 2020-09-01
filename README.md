@@ -1,16 +1,25 @@
-# Project Name
-Project description
+# Postman to OpCon Web Services
+These scripts are designed to convert Postman API collections into Web Services template files.  The resulting files can then be imported into an OpCon Web Services job.
+
+# Prerequisites
+* OpCon 18.3+
+* OpCon Web Services connector/subtype 20.1
+* <a href='https://www.postman.com/'>Postman</a> (latest)
+* Powershell 7+
+
+# Instructions
+Run the "ConvertPostman.ps1" file in the same directory as the module file.  You will also need to supply a parameter for where the Postman export is located.*
+
+```
+powershell -ExecutionPolicy Bypass -File ".\ConvertPostman.ps1" -postmanFile "C:\postman_collection.json"
+```
+
+*To export a collection from Postman, click the 3 dots by the collection "view more actions" and choose "export".  Choose collection version 2.1 and then "export", remember where you save the resulting .json file.
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
-
-# Prerequisites
-
-
-# Instructions
-
 
 # License
 Copyright 2019 SMA Technologies
