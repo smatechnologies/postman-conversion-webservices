@@ -10,6 +10,9 @@ These scripts are designed to convert Postman API collections into Web Services 
 # Instructions
 Run the "ConvertPostman.ps1" file in the same directory as the module file.  You will also need to supply a parameter for where the Postman export is located.*
 
+<b>Parameters</b>:
+* PostmanFile -  path to the exported json file from Postman
+
 ```
 powershell -ExecutionPolicy Bypass -File ".\ConvertPostman.ps1" -postmanFile "C:\postman_collection.json"
 ```
